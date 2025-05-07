@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Interactive Responsive Webpage</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">WebMastery</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#quiz"><span class="nav-icon">📝</span> Quiz</a></li>
+        <li><a href="#carousel"><span class="nav-icon">🖼️</span> Carousel</a></li>
+        <li><a href="#weather"><span class="nav-icon">⛅</span> Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Quiz Section -->
+    <section id="quiz" class="card quiz-card">
+      <h2>JavaScript & Web Quiz</h2>
+      <div id="quiz-container"></div>
+      <button id="next-btn" class="btn quiz-btn">Next Question</button>
+      <div id="score-container"></div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="card carousel-card">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button class="carousel-control prev">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide current-slide"><img src="../images/slide1.jpeg" alt="Slide 1"></li>
+            <li class="carousel-slide"><img src="../images/slide2.jpeg" alt="Slide 2"></li>
+            <li class="carousel-slide"><img src="../images/slide3.jpeg" alt="Slide 3"></li>
+            <li class="carousel-slide"><img src="../images/slide4.jpeg" alt="Slide 2"></li>
+            <li class="carousel-slide"><img src="../images/slide5.jpeg" alt="Slide 2"></li>
+          </ul>
+        </div>
+        <button class="carousel-control next">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather" class="card weather-card">
+      <h2>Current Weather</h2>
+      <form id="weatherForm" class="weather-form">
+        <input type="text" id="cityInput" placeholder="Enter city name" required>
+        <button type="submit" class="btn weather-btn">Get Weather</button>
+      </form>
+      <div id="weatherResult"></div>
+    </section>
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>

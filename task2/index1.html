@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & To-Do Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">TaskManager</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#todo">To-Do</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Contact Card -->
+    <section id="contact" class="card contact-card">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Fill out the form below and we’ll get back to you asap.</p>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- To-Do Card -->
+    <section id="todo" class="card todo-card">
+      <h2>My To-Do List</h2>
+      <form id="todoForm" class="todo-form">
+        <input type="text" id="todoInput" placeholder="Add a new task" required>
+        <button type="submit" class="btn secondary-btn">Add Task</button>
+      </form>
+      <ul id="todoList" class="todo-list"></ul>
+    </section>
+  </main>
+
+  <script src="script1.js"></script>
+</body>
+</html>
