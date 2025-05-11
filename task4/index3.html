@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Professional Portfolio</title>
+  <link rel="stylesheet" href="styles3.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🌟 WebMastery</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#todo">To-Do</a></li>
+        <li><a href="#products">Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+  <div class="hero-content">
+    <h1>Hello, I'm Alex Dev</h1>
+    <p>Front-End Developer & UI/UX Enthusiast crafting elegant web experiences.</p>
+    <p>I specialize in responsive design, modern JavaScript frameworks, and creating intuitive user interfaces that delight visitors.</p>
+    <ul class="skills-list">
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React & Vue.js</li>
+      <li>Responsive Web Design</li>
+      <li>UI/UX Principles</li>
+    </ul>
+    <a href="#projects" class="btn primary-btn">See My Work</a>
+  </div>
+  <div class="hero-image">
+    <img src="../images/profile.jpeg" alt="Alex Dev Portrait" />
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="../images/quiz.jpeg" alt="Project 1" />
+          <h3>Interactive Quiz App</h3>
+          <p>An engaging quiz platform with real-time feedback and scoring.</p>
+          <a href="#" class="btn secondary-btn">View Details</a>
+        </div>
+        <div class="project-card">
+          <img src="../images/portfolio.jpeg" alt="Project 2" />
+          <h3>Responsive Portfolio</h3>
+          <p>A multi-page portfolio site with smooth animations and themes.</p>
+          <a href="#" class="btn secondary-btn">View Details</a>
+        </div>
+        <div class="project-card">
+          <img src="../images/weather.jpeg" alt="Project 3" />
+          <h3>Weather Dashboard</h3>
+          <p>Real-time weather app using Open-Meteo API with dynamic UI.</p>
+          <a href="#" class="btn secondary-btn">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section bg-light" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- TO-DO -->
+    <section class="section" id="todo">
+      <h2 class="section-title">My To-Do List</h2>
+      <form id="todo-form" class="todo-form">
+        <input type="text" id="todo-input" placeholder="What needs to be done?" required />
+        <button type="submit" class="btn secondary-btn">Add Task</button>
+      </form>
+      <ul id="todo-list" class="todo-list"></ul>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section bg-light" id="products">
+      <h2 class="section-title">Products Showcase</h2>
+      <div class="controls">
+        <select id="filter-category">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        <select id="sort-price">
+          <option value="none">Sort by Price</option>
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+  </main>
+  <script src="script3.js"></script>
+</body>
+</html>
