@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My E‑Shop</title>
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">E‑Shop</div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon" id="cartToggle">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <!-- CART PREVIEW -->
+  <aside class="cart-preview" id="cartPreview">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+    <button id="checkoutBtn">Checkout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Welcome to E‑Shop</h1>
+      <p>Find your perfect products below.</p>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section id="products" class="products">
+      <!-- JS will inject product cards here -->
+    </section>
+  </main>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <span class="close" id="modalClose">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalName"></h3>
+      <p id="modalDesc"></p>
+      <div>Price: $<span id="modalPrice"></span></div>
+      <button id="addToCartBtn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="script4.js" defer></script>
+</body>
+</html>
